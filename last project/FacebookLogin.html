@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+
+  <header class="topnav2 fixed-top">
+      
+<div class="containers">
+
+  <h1 class="logo pt-2">golden<span>api</span></h1>
+  
+  <nav class="site-nav">
+        
+      <ul>
+         
+        <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li> 
+        <li><a href=""><i class="fa fa-info site-nav--icon"></i>Forms</a></li>
+         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          apis
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Facebook Login</a>
+          <a class="dropdown-item" href="#">Facebook Graph</a>
+          <a class="dropdown-item" href="#">Google</a>
+            <a class="dropdown-item" href="#">Weather</a>
+        </div>
+      </li>
+     <li ><form class="form-inline ">
+    <input class="form-control mr-sm-2  bcc" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0 bgg" type="submit">Search</button>
+  </form></li>
+      </ul> 
+      
+   </nav>
+  <section class="bg-color2"></section>
+      
+
+    
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
+  
+</div>
+
+</header>
+    
+    <div class="list-group">
+   
+    <a href="#" class="list-group-item actives"><i class="fa fa-key"></i> <span>App Settings</span></a>
+    <a href="#" class="list-group-item"><i class="fa fa-book"></i> <span>QuickStart Overview</span></a>
+    <a href="#" class="list-group-item"><i class="fa fa-compass"></i> <span>Documentation</span></a>
+
+
+  </div>
+    
+    
+    <section class="home2">
+        
+       <div class="container">
+           
+                   <p><strong>Home></strong> facebookLogin</p>
+           
+        <div class="homeInfo">
+        <h1>Quickstart: Facebook SDK for JavaScript</h1>
+           
+        <p dir="rtl">FaceBook SDK يوفر لك مجموعة من الوظائف التي:</p>
+                
+               
+      
+            
+            
+             <ul class="pr-5">
+                <li dir="rtl">تتيح لك إستخدام like button  و العديد من social plugins  في موقعك.</li>
+                    <li dir="rtl">تتيح لك إستخدام Facebook login  لتسهيل تسجيل عملائك في موقعك.</li>
+                    <li dir="rtl">تسهل لك الإتصال ب Facebook graph Api.</li>
+                 <li dir="rtl">تسهل لك التواصل عندما تنشأ لعبة أو صفحة بالFacebook خاصة بموقعك.</li>
+                </ul>
+        
+          </div>
+           
+           <div class="homeInfo">
+               <div class="sidewar"></div>
+               
+               <p dir="rtl"><strong>المتصفحات المتاحة</strong></p>
+               
+                <p dir="rtl">Facebook SDK يدعم أخر إصدارين من أغلب المتصفحات المشهورة :chrome, firefox, Edge, Safari(ios) and intrnet explorer (إصدار 11 فقط)</p>
+               
+               
+           </div>
+           
+             <div class="homeInfo">
+               
+               
+                <p dir="rtl"><strong>المتصفحات المتاحة</strong></p>
+               
+                <p dir="rtl">   Facebook SDK  لا يحتاج لتحميل أو تثبيت أي نوع ملفات, فقط تحتاج لنقل الJs code  لصفحة الـ html الخاصة بك.</p>
+                 
+                <p dir="rtl">* يجب وضع الcode  بعد فتح عنصر الـ<code>'body'</code> مباشرة لمنع حدوث  أي تعطيل من خلال عناصر الcode  الخاصة بك.</p>
+               
+               
+           </div>
+           
+           
+           <pre class="code" style=""><span class="tag">&lt;script&gt;</span><span class="pln">
+  window</span><span class="pun">.</span><span class="pln">fbAsyncInit </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    FB</span><span class="pun">.</span><span class="pln">init</span><span class="pun">({</span><span class="pln">
+      appId            </span><span class="pun">:</span><span class="pln"> </span><span class="str">'your-app-id'</span><span class="pun">,</span><span class="pln">
+      autoLogAppEvents </span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+      xfbml            </span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+      version          </span><span class="pun">:</span><span class="pln"> </span><span class="str">'</span><code><span class="str">v3.2</span></code><span class="str">'</span><span class="pln">
+    </span><span class="pun">});</span><span class="pln">
+  </span><span class="pun">};</span><span class="pln">
+
+  </span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">,</span><span class="pln"> s</span><span class="pun">,</span><span class="pln"> id</span><span class="pun">){</span><span class="pln">
+     </span><span class="kwd">var</span><span class="pln"> js</span><span class="pun">,</span><span class="pln"> fjs </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="pln">s</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">];</span><span class="pln">
+     </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">d</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="pln">id</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="kwd">return</span><span class="pun">;}</span><span class="pln">
+     js </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="pln">s</span><span class="pun">);</span><span class="pln"> js</span><span class="pun">.</span><span class="pln">id </span><span class="pun">=</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+     js</span><span class="pun">.</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> </span><span class="str">"https://connect.facebook.net/en_US/sdk.js"</span><span class="pun">;</span><span class="pln">
+     fjs</span><span class="pun">.</span><span class="pln">parentNode</span><span class="pun">.</span><span class="pln">insertBefore</span><span class="pun">(</span><span class="pln">js</span><span class="pun">,</span><span class="pln"> fjs</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">}(</span><span class="pln">document</span><span class="pun">,</span><span class="pln"> </span><span class="str">'script'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'facebook-jssdk'</span><span class="pun">));</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span><span class="pln">
+    </span></pre>
+           
+           <div class="homeInfo">
+               
+               <p dir="rtl">هذا الcode  سوف يقوم بتشغيل  الSDK . يجب عليك الان نسخ الـ Facebook ID الخاص بك في خانة your-app-id  , يمكنك جلبه من هنا <a href="https://developers.facebook.com/apps">https://developers.facebook.com/apps</a></p>
+               
+           
+           </div>
+           
+     </div>
+    </section>
+    
+     <footer>
+           <div class="container">
+           <div class="row">
+               <div class="col-md-2">
+
+                   <div class="cf">
+                   <h2>Apis</h2>
+                   </div>
+
+               </div>
+
+                <div class="col-md-3">
+
+                   <div class="cf">
+                   <h4>Facebook login</h4>
+                       <h4>Facebook graph</h4>
+                   </div>
+
+               </div>
+
+                <div class="col-md-3">
+
+                   <div class="cf">
+                   <h4>google</h4>
+                       <h4>Weather</h4>
+                   </div>
+
+               </div>
+
+                 <div class="col-md-4">
+
+                   <div class="cf">
+                   <h6>Golden API</h6>
+                       <p>تعلم إزاي تربط موقعك بالمواقع المختلفة عن طريق الـ    
+                                                           <span>API</span></p>
+                   </div>
+
+               </div>
+           </div>
+        </div>
+
+
+</footer>
+        <div class="footer2">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+         <div class="cf-down">
+               <h6>CopyRight@</h6>
+             </div>
+                </div>
+              <div class="col-md-6 d-flex justify-content-end">
+                                        <a class="px-4"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="px-4"><i class="fab fa-twitter"></i></a>
+                                        <a class="px-4"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="px-4"><i class="fab fa-google"></i></a>
+                                    </div>
+               </div>
+           </div>
+        </div>
+
+    
+    
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/inde.js"></script>
+    </body>
+    
+</html>
